@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class TicTacToe
     attr_accessor :board
 
@@ -129,4 +130,41 @@ class TicTacToe
             puts "Cat's Game!"
         end
     end
+=======
+class TicTacToe
+    attr_accessor :board
+    
+    WIN_COMBINATIONS = [
+    
+    # Row wins
+    [0,1,2],
+    [3,4,5],
+    [6,7,8],
+    
+    # Column wins 
+    [0,3,6],
+    [1,4,7],
+    [2,5,8],
+    
+    # Diagonal wins
+    [0,4,8],
+    [2,4,6]
+    
+    ]
+
+    @WIN_COMBINATIONS = [
+    [0,1,2], 
+    [3,4,5], 
+    [6,7,8], 
+    [0,4,8], 
+    [6,4,2], 
+    [2,5,8], 
+    [1,4,7],
+    [0,3,6] 
+      ]
+
+    def initialize(board = nil)
+        @board = board || Array.new(9, " ")
+    end
+>>>>>>> e039e89a07459ee277bf4ca717524defc83989e8
 end
